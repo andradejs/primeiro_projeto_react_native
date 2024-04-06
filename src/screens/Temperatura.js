@@ -19,7 +19,7 @@ export default function Temperatura() {
         
         setCampoCelsius('')
         fahrenheit = text
-        celsius = ((fahrenheit-32) / 1.8).toFixed(2) 
+        celsius = ((fahrenheit-32) / 1.8).toFixed(1) 
         setValueFar(celsius);
     }
     
@@ -27,7 +27,7 @@ export default function Temperatura() {
         
         setCampoFahrenheit('')
         let celsius = text;
-        fahrenheit = ((celsius*1.8) + 32).toFixed(2);
+        fahrenheit = ((celsius*1.8) + 32).toFixed(1);
         setValueCelsius(fahrenheit);
         
     }
